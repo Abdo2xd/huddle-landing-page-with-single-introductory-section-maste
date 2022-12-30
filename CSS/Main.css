@@ -1,0 +1,92 @@
+/* Main Colors And Dimensions */
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft_Magenta: hsl(300, 69%, 71%);
+}
+
+/* Main Options */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Violet);
+    background-image: url(/images/bg-desktop.svg);
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* The Header */
+header {
+    padding: 64px 0 0 64px;
+    margin-bottom: 21px;
+}
+
+/* The Main Content */
+main {
+    display: flex;
+    padding: 80px 80px 0;
+    color: white;
+}
+.the-content {
+    padding-left: 50px;
+    line-height: 1.7;
+}
+.the-content p ,main .the-content h1 {
+    margin: 0;
+} 
+.the-content h1 {
+    width: 325px;
+}
+
+.the-content p {
+    width: 455px;
+    margin: 40px 0 25px 0;
+}
+.the-content .the-button {
+    width: 170px;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px #0000005e;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: none;
+    color: var(--Violet);
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+
+}
+.the-content .the-button:hover {
+    color: var(--Soft_Magenta);
+}
+
+/* The Social Media Icons */
+.facebook-icon, .twiter-icon, .instagram-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    cursor: pointer;
+}
+.facebook-icon {
+    right: calc(80px * 2 + 35px);
+}
+.twiter-icon {
+    right: calc(80px * 2 + -25px);
+} 
+.instagram-icon {
+    right: 80px;
+} 
